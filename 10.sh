@@ -1,35 +1,11 @@
-#!/bin/bash
-echo "1. Display the dirctory contents"
-echo "2. Name of the current directory"
-echo "3. Who is logged on"
-echo "4. Long listing of directory contents"
-echo "5.exit"
-while :
-do
-echo "Enter your choice"
-read ch
+echo "Program 10"
+echo "understaing difference between echo statements using "",'', without quotes"
+echo " "
 
-case "$ch" in
-1) echo "Enter the directory: "
-  read d
-  cd "$d"
-  ls
-  ;;
-2) echo "Current directory is :"
-  pwd
-  ;;
-3) echo "Who is logged on: "
-  who
-  ;;
- 
-4) echo "Enter the directory: "
-  read d
-  cd "$d"
-  ls -l
-  ;;
-5) echo "exiting"
-   exit 0
-   ;;
-*) echo "invalid option" 
-esac
-done
+a="Ubuntu"
+
+echo "Word is " $a
+echo " "
+echo "Without quotes: " $a
+echo "With Single Quotes: " '$a'
+echo "With Double Quotes: " "$a"
